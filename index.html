@@ -1,188 +1,225 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>SULTAN MALIK</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic%7COswald%3A400%2C300%7CVollkorn%3A400%2C400italic'><link rel="stylesheet" href="vikrant-singh.css">
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '682986337468852');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=682986337468852&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Meta Pixel Code -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>rowdy anna</title>
+    <style>
+    :root {
+    --white: #ffffff;
+    --accent: #ffd700;
+    --btn-bg: #0b1b4a;
+    --btn-border: #ffffff;
+    }
 
+     html,body{
+     height:100%;
+     margin:0;
+     padding:0;
+     font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+   }
+   body{
+    background: url('https://raw.githubusercontent.com/onlinetipper/sultan-malik/9b1d0096f00c72215d49e7931249747ebf93aa2e/sultan.jpg') center/cover no-repeat fixed;
+    position:relative;
+    color:var(--white);
+    -webkit-font-smoothing:antialiased;
+  }
 
-  <!-- Meta Pixel Code -->
-  <script>
-    !function(f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function() {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-  
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-  
-    // Initialize two Pixel IDs
-    fbq('init', '1605149740674991');      // Pixel 1
-    fbq('init', '1213406209906467');     // Pixel 2
-  
-    // Track PageView for both pixels
-    fbq('track', 'PageView');
-  </script>
-  
-  <!-- Noscript fallback for 2 Pixels -->
-  <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=1605149740674991&ev=PageView&noscript=1" />
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=1213406209906467&ev=PageView&noscript=1" />
-  </noscript>
-  <!-- End Meta Pixel Code -->
+  .bg-overlay{
+    position:fixed; inset:0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(4px);
+    z-index:0;
+  }
 
-  
+  .wrap{
+    position:relative;
+    z-index:2;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:28px;
+    box-sizing:border-box;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 520px;
+    text-align:center;
+    padding: 18px 20px;
+    color: #fff;
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 6px 0;
+    text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  }
+
+  .subtitle {
+    font-size: 16px;
+    color: rgba(255,255,255,0.9);
+    margin-bottom:18px;
+  }
+
+  /* circular profile */
+  .profile {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 18px auto 12px;
+    border: 4px solid rgba(255,255,255,0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    background: center/cover no-repeat;
+  }
+
+  .joining-line {
+    margin-top: 10px;
+    color: rgba(255,255,255,0.85);
+    font-size: 16px;
+  }
+  .count {
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--accent);
+    margin-top: 6px;
+    text-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  }
+
+  .userline {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .request {
+    margin-top: 8px;
+    color: rgba(255,255,255,0.85);
+    font-size: 14px;
+  }
+
+  /* animated button */
+  .btn-join {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin: 24px auto 10px;
+    background: var(--btn-bg);
+    color: var(--white);
+    padding: 16px 28px;
+    border-radius: 44px;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    border: 3px solid var(--btn-border);
+    box-shadow: 0 10px 30px rgba(3,10,40,0.6);
+    animation: popup 2s infinite ease-in-out, pulseColor 3s infinite alternate;
+  }
+
+  @keyframes popup {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+
+  @keyframes pulseColor {
+    0% { background-color: #0b1b4a; }
+    50% { background-color: #152b7b; }
+    100% { background-color: #0b1b4a; }
+  }
+
+  .btn-join:hover {
+    transform: scale(1.1);
+    box-shadow: 0 14px 40px rgba(3,10,40,0.9);
+  }
+
+  .footer-credit {
+    margin-top: 18px;
+    color: rgba(255,215,0,0.95);
+    font-weight:700;
+    font-size: 14px;
+  }
+  .footer-credit a { color: rgba(255,215,0,0.95); text-decoration:none; }
+
+  @media (max-width:480px){
+    .title { font-size: 28px; }
+    .profile { width:110px; height:110px; }
+    .count { font-size:42px; }
+    .btn-join { font-size:18px; padding:14px 22px; border-radius:36px; }
+  }
+</style>
 </head>
 <body>
 
-<!-- partial:index.partial.html -->
-<main class="main-content">
-  <section class="slideshow" >
+<div class="bg-overlay"></div>
 
-    <div class="slideshow-inner">
+<div class="wrap">
+  <div class="card">
+    <div class="title">Sultan Malik..🔥 </div>
+    <div class="subtitle">Toss, Match, Session Prediction</div>
 
-      <div class="slides">
+    <div id="profile" class="profile" style="background-image: url('https://raw.githubusercontent.com/onlinetipper/sultan-malik/9b1d0096f00c72215d49e7931249747ebf93aa2e/sultan.jpg');"></div>
 
-        <div class="slide is-active ">
-          <div class="slide-content">
+    <div class="joining-line">FREE JOINING ENDS IN...</div>
+    <div class="count" id="countNum">43</div>
 
-            <div class="caption">
-              <div class="title">🔥Sulan Malik🔥</div>
-              <br />
-              <br />
-              <br />
-              <div style="text-align: center;font-size:66px; font-weight: 800;">CRICKET PREDICTION 🔥BADSHAH🔥</div>
-              
+    <div class="userline">@sultansamrat8</div>
+    <div class="request">Request access — approvals are quick ⬇</div>
 
-              <br />
-              <br />
-              <br />
-              <a onclick="openTelegram()" style="cursor:pointer"  class="btn" id="slideshow">
-                <span class="btn-inner">Join The Original Telegram Channel</span>
-                <i class="fa fa-telegram" style="font-size:48px"></i>
-                </a>
-               <br /> <br />
-               <br />`
-               <br />
-               <br />
-               <br />
-               <br />
-               <br />
-              <div class="text" >
-                <span class="timer" >FREE JOINING ENDS IN...</span>
-                <span class="seconds">60</span>
-              </div>
+    <a id="joinBtn" class="btn-join" href="https://t.me/+N0oraiHKa31kZDBl" target="_blank">
+      JOIN NOW FOR FREE 
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path d="M21 4L3 10.5L10 13.5L13 21L15 13.5L21 4Z" fill="#fff"/>
+      </svg>
+    </a>
 
-              <a onclick="openTelegram()" class="btn-show" style="cursor:pointer" id="slideshow">
-                <span class="btn-inner">Join The Original Telegram Channel</span>
-              </a>
-              <br />
-            </div>
+    <div class="footer-credit">Setup<a href="https://t.me/AdDukan1" target="_blank">AD DUKAN</a></div>
+  </div>
+</div>
 
-          </div>
-
-          <div class="image-container">
-            <img src="https://raw.githubusercontent.com/onlinetipper/sultan-malik/9b1d0096f00c72215d49e7931249747ebf93aa2e/sultan.jpg" alt="" class="image" />
-          </div>
-
-        </div>
-
-        
-
-      
-
-  </section>
-</main>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script><script  src="./script.js"></script>
 <script>
-function isMobileView() {
-  return window.matchMedia('(max-width: 767px)').matches;
-}
-
-// Apply margin if it's a mobile view
-function applyMarginForMobileView() {
-  if (isMobileView()) {
-    var element = document.getElementById('slides');
-    if (element) {
-      element.style.marginTop = '200px'; // Add your desired margin value here
-    }
-  }
-}
-var slideshowInner = document.getElementById('slideshow');
-
-slideshowInner.addEventListener('click', function() {
-  window.location.href = 'https://telegram.me/+ccxZ63SWuyQzNDA1';
-});
-function openTelegram(){
-  window.location.href = 'https://t.me/+N0oraiHKa31kZDBl';
-}
-// Call the function when the window is resized
-window.addEventListener('resize', applyMarginForMobileView);
-
-// Call the function initially when the page loads
-applyMarginForMobileView();
- function startCountdown() {
-  var slides = document.querySelectorAll('.slide');
-
-  slides.forEach(function(slide) {
-    var secondsElement = slide.querySelector('.seconds');
-    var seconds = 60;
-
-    var countdownInterval = setInterval(function() {
-      seconds--;
-      secondsElement.textContent = seconds;
-
-      if (seconds === 0) {
-        clearInterval(countdownInterval);
-        // Handle countdown completion here
-      }
-    }, 1000);
-  });
-}
-
-startCountdown();
-function toggleButtonVisibility() {
-  var btnMobile = document.getElementById('btnMobile');
-  var btnDesktop = document.getElementById('btnDesktop');
-
-  if (window.innerWidth <= 767) {
-    btnMobile.style.display = 'inline-block';
-    btnDesktop.style.display = 'none';
-  } else {
-    btnMobile.style.display = 'none';
-    btnDesktop.style.display = 'inline-block';
-  }
-}
-
-// Call the function when the window is resized
-window.addEventListener('resize', toggleButtonVisibility);
-
-// Call the function initially when the page finishes loading
-window.addEventListener('load', toggleButtonVisibility);
-
-
+  (function(){
+    let n = 43;
+    const el = document.getElementById('countNum');
+    setInterval(()=>{
+      n--;
+      if(n <= 0) n = 43;
+      el.textContent = n;
+    },1000);
+  })();
 </script>
-
-
-
-
 
 </body>
 </html>
